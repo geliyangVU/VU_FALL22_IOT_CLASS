@@ -14,9 +14,11 @@ The Screen shot can be found at HomePage.png
 I change the name and password for my wifi.
 The Screen shot can be found at ChangeWifiNamePage.png, ChangePassword.png and WirelessSetting.png
 
-## Completed the naming of the wifi
+## Completed the name of the wifi
 The Screen shot can be found at UpdatedWifiNameShown.png
 
+## Completed the password of the wifi
+The Screen shot can be found at EnterNewPassword.png
 
 
 ## Start the RepeaterMode
@@ -25,13 +27,17 @@ The Screen shot can be found at RepeaterModeStart.png
 
 
 ## Try to select the wifi to establish repeater mode
-The Screen shot can be found at LookForVUMobile. I encountered security issues with VUMobile.
+The Screen shot can be found at LookForVUMobile.png and EnterCredentials.  I encountered security issues with VUMobile.
 Then I switched to VUGuest wifi.
 
 
 
 ## Enter credentials for VUGuest wifi
 The Screen shot can be found at CredentialsForVUGuestWifi.png
+
+## Connection established for VUGuest wifi
+The Screen shot can be found at VUGuestWifi.png and ConnectionEstablished.png
+
 
 
 
