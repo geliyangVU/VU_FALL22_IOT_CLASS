@@ -6,11 +6,33 @@ The Raspberry Pi I am using is 4 Model B 8gb.
 
 
 # Setup RaspberryPI Tutorial
+Reference: https://github.com/pschragger/IOT_Tutorials_for_VU/tree/main/RPI_BOOT_WIFI_tutorial
 
 
+## Purpose
+Install DietPi on a Raspberry PI via WIFI ready to install other software
+Install a version of a Linux operating system on the PI
 
-## Download DietPi image and unzip the folder
 
+## Prerequisites
+
+To accomplish finishing the setup you will need:
+
+A laptop or desktop to act as your development platform
+A Raspberry PI ( 3 B+ or 4 )
+A Class 10 microSD 8gb or better with the maximum being a 32gb microsd card ( Check https://www.mymemory.co.uk/blog/the-best-memory-cards-for-raspberry-pi/ for the best cards to use with a PI )
+WIFI ROUTER and configuration info. I am using a travel or IOT router to create a local portable network that I can reconfigure to work in various locations using hardwire ethernet or wifi repeater functions to provide wan internet access. You need your personal routers SSID and your WIFI key info to configure your pi for access. If you need help setting up your WIFI router then follow this tutorial.<a href="https://github.com/geliyangVU/VU_FALL22_IOT_CLASS/tree/main/Setup_Router_Tutorial" target="_blank">Wifi_setup_Link</a>
+
+
+## Setup steps
+
+### Setup your working environment on your laptop
+
+Prepare your device to with an archiver extractor - on windows I used BreeZip http:www.breezip.com but others are available from https://www.7-zip.org . On MacOS V11 it extracted using tools already installed but an unarchiver is available at https://theunarchiver.com for your mac if extraction is not working.
+Prepare you laptop with a sd card writer such as: balenaEtcher https://www.balena.io/etcher/
+
+## Download and configure DietPi on your laptop
+### Download DietPi image and unzip the folder
 <img width="919" alt="Screen Shot 2022-09-10 at 2 30 18 PM" src="https://user-images.githubusercontent.com/97559266/189497383-52c160e5-ec04-4f4f-b871-16a1ffa8ccf3.png">
 
 ## Open BalenaEtcher software and select the DietPi image and SD card location.
