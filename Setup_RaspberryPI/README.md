@@ -43,13 +43,13 @@ Here is the screen shot I took:
 <img width="1004" alt="makesuretoreplacethem" src="https://user-images.githubusercontent.com/97559266/189497932-f34cde3e-dcb6-4653-8b61-5c6f3f98533e.png">
 
 <img width="1030" alt="doublecheckthatthosetwofilesareupdated" src="https://user-images.githubusercontent.com/97559266/189497940-6d037e62-72dc-4c7c-92a8-98b58422ca53.png">
-Make sure that the edit are saved!
+Make sure that the edits were saved!
 
 #### Insert the sd card to your raspberry Pi and power it. The red and green leds will turn on. You should wait until the green light has finished flashing and the whole process may take 10 minutes 
 
 
 ## Go to the admin page of router and look for the IP address for the raspberry pi
-In my case, my admin page has an ip address of 192.168.8.1 
+In my case, my dietPi has an ip address of 192.168.8.1 
 
 <img width="1374" alt="VerifiedthatDietPiisupandRunning" src="https://user-images.githubusercontent.com/97559266/189498203-d745e7d6-103a-4ba1-93f8-1494bea8e136.png">
 You can see from the above picture that my raspberry pi has an ip address of 192.168.8.150
@@ -57,24 +57,24 @@ In order to ssh to my Raspberry Pi, I opened my terminal, and typed the followin
 the password I used was dietpi
 
 <img width="1082" alt="Screen Shot 2022-09-10 at 2 25 00 PM" src="https://user-images.githubusercontent.com/97559266/189498265-9e1e3a7d-a13f-4685-a422-5d03e37cb08b.png">
-I was ablt to get to the following UI, the upper left corner says: RPi 4 Model B (aarch64) with IP : 192.168.8.150
+I was able to get to the following UI, the upper left corner said: RPi 4 Model B (aarch64) with IP : 192.168.8.150
 <img width="1059" alt="Screen Shot 2022-09-10 at 2 19 03 PM" src="https://user-images.githubusercontent.com/97559266/189498289-050ed282-77aa-4fb7-a214-9f82e9ac9af6.png">
-It took me a while to get used to this UI and I was able to find the DietPi-Config from the menu
+It took me a while to get used to this UI and I was able to find the DietPi-Config from the menu.
 
 <img width="1054" alt="Screen Shot 2022-09-10 at 2 20 05 PM" src="https://user-images.githubusercontent.com/97559266/189498446-7d83ec32-5cab-4643-b44c-744bcf9f15ae.png">
 
 ## Go to the Security Options to change password and hostname
 
-Then I changed the password under Security Options
+Then I changed the password under Security Options.
 
 <img width="1052" alt="Screen Shot 2022-09-10 at 2 20 21 PM" src="https://user-images.githubusercontent.com/97559266/189498475-ffac06a1-320a-4441-b05c-c56bff73fdee.png">
-Change password and Hostname
+Change password and Hostname.
 
 <img width="1083" alt="Screen Shot 2022-09-10 at 2 23 06 PM" src="https://user-images.githubusercontent.com/97559266/189498514-988dde46-17b3-4713-b013-670f98af5887.png">
 
 <img width="1084" alt="Screen Shot 2022-09-10 at 2 23 23 PM" src="https://user-images.githubusercontent.com/97559266/189498520-963faa1c-c4ff-4a0e-8a77-21cd7bfde526.png">
 
-The last thing I did was to confirm the password change.
+The last thing I did was to confirm the password changed.
 
 <img width="1062" alt="Screen Shot 2022-09-10 at 2 20 57 PM" src="https://user-images.githubusercontent.com/97559266/189498541-b6e27b08-5c3c-42ef-8a30-6fc3e8c137ba.png">
 
