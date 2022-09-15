@@ -10,7 +10,7 @@ Reference: https://github.com/pschragger/IOT_Tutorials_for_VU/tree/main/RPI_BOOT
 
 
 ## Purpose
-Install DietPi on a Raspberry PI via WIFI ready to install other software
+Install DietPi on a Raspberry PI via WIFI
 Install a version of a Linux operating system on the PI
 
 
