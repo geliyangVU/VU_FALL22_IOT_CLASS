@@ -78,11 +78,9 @@ Make sure that the edits were saved!
 
 
 ## Go to the admin page of router and look for the IP address for the raspberry pi
-In my case, my dietPi has an ip address of 192.168.8.1 
-
 <img width="1374" alt="VerifiedthatDietPiisupandRunning" src="https://user-images.githubusercontent.com/97559266/189498203-d745e7d6-103a-4ba1-93f8-1494bea8e136.png">
 You can see from the above picture that my raspberry pi has an ip address of 192.168.8.150
-In order to ssh to my Raspberry Pi, I opened my terminal, and typed the following command:ssh root0192.168.8.150
+In order to ssh to my Raspberry Pi, I opened my terminal, and typed the following command:ssh root@192.168.8.150
 the password I used was dietpi
 
 <img width="1082" alt="Screen Shot 2022-09-10 at 2 25 00 PM" src="https://user-images.githubusercontent.com/97559266/189498265-9e1e3a7d-a13f-4685-a422-5d03e37cb08b.png">
