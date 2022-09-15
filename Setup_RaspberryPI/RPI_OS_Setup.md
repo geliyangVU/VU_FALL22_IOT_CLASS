@@ -145,3 +145,30 @@ I was able to see the linux terminal using my mac's terminal.
 I will continue to do installation later this week
 <img width="1440" alt="linux terminal shown" src="https://user-images.githubusercontent.com/97559266/190446627-caf83611-0f94-4278-97bc-00158d1b2cdf.png">
 
+## scp linux command
+
+I have established the scp communication between my mac and RaspberryPi.
+Here are the steps I followed. 
+
+
+
+<img width="682" alt="Screen Shot 2022-09-15 at 12 26 09 PM" src="https://user-images.githubusercontent.com/97559266/190460914-2083081f-1ce7-436a-a2b1-499f9a4c6b77.png">
+<img width="749" alt="Screen Shot 2022-09-15 at 12 27 48 PM" src="https://user-images.githubusercontent.com/97559266/190460947-b048ce62-4a92-441e-af31-30a19c493742.png">
+
+The first screenshot showed the terminal from my mac. The second screenshot showed the terminal from DietPi
+It said that the scp command not found on dietPi so I went to search on StackOverFlow to resolve.
+This is the command I found helpful.
+
+
+If you work with Debian or Ubuntu and clones, install this package:
+
+    apt-get install openssh-client
+
+
+Reference: https://stackoverflow.com/questions/17131048/error-when-using-scp-command-bash-scp-command-not-found
+
+After I installed the openssh-client on my DietPi. I was able to send file from my mac's terminal to dietPi.
+The second screenshot showed the result.
+
+
+
