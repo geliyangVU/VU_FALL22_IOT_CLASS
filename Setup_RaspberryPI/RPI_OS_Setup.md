@@ -107,13 +107,41 @@ The last thing I did was to confirm the password changed.
 
 <img width="1062" alt="Screen Shot 2022-09-10 at 2 20 57 PM" src="https://user-images.githubusercontent.com/97559266/189498541-b6e27b08-5c3c-42ef-8a30-6fc3e8c137ba.png">
 
+## Problem encountered
 VUGUEST firewall blocks icmp message that ping uses.
 I resolved this issue using my home wifi.
 Reference from professor
 https://www.speedguide.net/faq/how-to-become-pingable-behind-a-routerfirewall-376
 
 
+<img width="806" alt="knownhosterror" src="https://user-images.githubusercontent.com/97559266/190444528-c45ebe1a-c1d9-443c-9335-ce005ea4e80a.png">
+
+I encountered this error of knownhost. I solved it by editing the known_hosts file under ~/.ssh/known-hosts
+Here are some  screenshot showing my editing process.
+
+As you can see in the following image, there exists a host with IP address 192.168.8.150 which causes the error
+<img width="1375" alt="changeknownhost" src="https://user-images.githubusercontent.com/97559266/190445178-a2c8d53a-e992-4708-ba09-36c99c349a2d.png">
+
+I used nano to edit this file by deleting the last line containing the 192.168.8.150.
+
+<img width="790" alt="changeKnownhostusingNano" src="https://user-images.githubusercontent.com/97559266/190445423-dc73a713-f7ff-4e28-85db-3f9655afec7c.png">
+Verified that the last line is gone.
+<img width="1375" alt="knownhostchanged" src="https://user-images.githubusercontent.com/97559266/190445902-d0f73389-d8a2-42d6-a27e-019f691763ac.png">
+
+## Resolve the wifi issue using home wifi.
+I saved the file and retry to connect this DietPi IP address and it worked.
+
+I was able to successfully connect to my dietPi.
+<img width="1424" alt="successfulconnect to pi" src="https://user-images.githubusercontent.com/97559266/190446059-3fe7bad3-fe45-4794-b089-a20afbd304bf.png">
+
+I adjusted the dietpi and unix user password for my dietPi as I did earlier in this tutorial.
+<img width="1279" alt="Screen Shot 2022-09-14 at 9 41 33 PM" src="https://user-images.githubusercontent.com/97559266/190446295-1cff8821-fa09-43f2-a156-2f9b0da9c910.png">
+
+The last step for this was to select the Go>>Start installation for selected software. I built the minimum linux image and here were the screenshots.
+<img width="1439" alt="gotoinstall" src="https://user-images.githubusercontent.com/97559266/190446615-c7cb68f9-c48a-412f-bbdf-74a90fded468.png">
 
 
-
+I was able to see the linux terminal using my mac's terminal.
+I will continue to do installation later this week
+<img width="1440" alt="linux terminal shown" src="https://user-images.githubusercontent.com/97559266/190446627-caf83611-0f94-4278-97bc-00158d1b2cdf.png">
 
