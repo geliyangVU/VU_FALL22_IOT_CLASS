@@ -107,9 +107,10 @@ The last thing I did was to confirm the password changed.
 
 <img width="1062" alt="Screen Shot 2022-09-10 at 2 20 57 PM" src="https://user-images.githubusercontent.com/97559266/189498541-b6e27b08-5c3c-42ef-8a30-6fc3e8c137ba.png">
 
-
-
-
+VUGUEST firewall blocks icmp message that ping uses.
+I resolved this issue using my home wifi.
+Reference from professor
+https://www.speedguide.net/faq/how-to-become-pingable-behind-a-routerfirewall-376
 
 
 
