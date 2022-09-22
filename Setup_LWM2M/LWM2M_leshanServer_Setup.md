@@ -68,13 +68,17 @@ ssh dietpi@(IPADDR_OF_PI)
    ```
    wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
    ```
-   <img width="910" alt="10 downloadmaven" src="https://user-images.githubusercontent.com/97559266/191804689-bb2210dd-927b-43c3-962f-ed712af65387.png">
-   4. unpack the tarball
+   Here is a screen shot showing maven is downloaded <img width="910" alt="10 downloadmaven" src="https://user-images.githubusercontent.com/97559266/191813302-74866471-bdab-4d57-9cef-ab3dde3b2299.png">
+
+   
+   4. unpack the tarball using the following command <img width="889" alt="11 unzipmaven" src="https://user-images.githubusercontent.com/97559266/191811757-8f8e5001-3574-4571-8048-2223ae01b231.png">
+
    ```
    tar xzvf apache-maven-3.8.6-bin.tar.gz
    ```
    5. Add the bin directory of the created directory apache-maven-3.8.6 to the PATH environment variable
-   6. Confirm installation using
+   6. Confirm installation using<img width="892" alt="12 verifiedthatmavenisworking" src="https://user-images.githubusercontent.com/97559266/191811827-91867089-5109-420d-8618-b4d24d84da7f.png">
+
    ```
    mvn -v
    ```
@@ -112,7 +116,20 @@ OS name: "linux", version: "5.15.32-v8+", arch: "aarch64", family: "unix"
       /usr/lib/jvm/java-17-openjdk-arm64
       ```
 
-4. Install leshan git and build  - instructions form [leshan git](https://github.com/eclipse/leshan)
+4. Install nodejs environment
+
+  - On command line in dietpi start dietpi-software
+    ```
+    sudo dietpi-software
+    ```
+    - search for NodeJS <img width="904" alt="13 installnodejsenvironment" src="https://user-images.githubusercontent.com/97559266/191812340-a3166c40-f05a-4068-be31-60433b5cce47.png">
+
+
+    - press spacebar to select ( asterick [*] should show)<img width="914" alt="14 installnodejs" src="https://user-images.githubusercontent.com/97559266/191812370-14bd7605-37fb-48d2-9270-bb3a6d1cc195.png">
+    - tab to ok and press enter 
+    - it should take less then 10 minutes to install the openJDK jre and jdk depending on network traffic
+    - press enter and it should show that the NodeJs is successfully installed <img width="1024" alt="15 nodejsinstallationcompleted" src="https://user-images.githubusercontent.com/97559266/191812439-66aa6a32-7902-494f-804b-6ad36968432c.png">
+5. Install leshan git and build  - instructions form [leshan git](https://github.com/eclipse/leshan)
    - clone the leshan repo using
    ```
    cd
@@ -127,6 +144,10 @@ OS name: "linux", version: "5.15.32-v8+", arch: "aarch64", family: "unix"
      mvn clean install
      ```
    - The build may take 20 minutes or longer
+<img width="993" alt="16 createprojectdirectoryandclonetheleshanrepo" src="https://user-images.githubusercontent.com/97559266/191812504-5cb90330-cdc2-4301-a72d-59e961953886.png">
+   - verify the server build successfully
+<img width="1025" alt="17 buildtheserversuccessful" src="https://user-images.githubusercontent.com/97559266/191812723-ce62ed0a-2014-47da-affd-a04f9f7083e7.png">
+
 
 ### Test the leshan server
 1. Start the server using
@@ -136,21 +157,29 @@ OS name: "linux", version: "5.15.32-v8+", arch: "aarch64", family: "unix"
   ```
   -  Connect on Leshan demo UI: http://RPI_IPADDR:8080
 
-   My Raspberry PI is using 192.168.8.224 ( from the router admin client page)
+   My Raspberry PI is using 192.168.8.150 ( from the router admin client page)
    therefore I will use
    ```
-   http://192.168.8.224:8080
+   http://192.168.8.150:8080
    ```
-   this will bring up te leshan register client page
+   this will bring up te leshan register client page. It should be empty for now
+   
+   <img width="1431" alt="18 emptypagewiththeserver" src="https://user-images.githubusercontent.com/97559266/191812811-13acb8c0-7bed-47bc-b1e0-13802753835e.png">
+
 
 
   - run the leshan client to add it to the page
   ```
   java -jar leshan-client-demo/target/leshan-client-demo-*-SNAPSHOT-jar-with-dependencies.jar
   ```
+  <img width="1034" alt="19 registerleshanclient" src="https://user-images.githubusercontent.com/97559266/191812863-18390df6-b6e3-41a0-9900-d5479fbec173.png">
+
+  
 
   The result should show the registration of your DietPI host as a Temperature client endipoint
   This end point should continue to register every minute.
+  <img width="1440" alt="20 leshanservershowingdietpi" src="https://user-images.githubusercontent.com/97559266/191812889-02c2f663-94ee-41a5-b4b9-d06bb40b03f2.png">
+
   using ctrl-c to stop the client
 
   ### check the server page in the leshan server page to see the active url info and public keys and server cert info
