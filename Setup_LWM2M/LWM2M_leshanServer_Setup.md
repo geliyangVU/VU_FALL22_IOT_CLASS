@@ -183,5 +183,8 @@ OS name: "linux", version: "5.15.32-v8+", arch: "aarch64", family: "unix"
   using ctrl-c to stop the client
 
   ### check the server page in the leshan server page to see the active url info and public keys and server cert info
+For additional experiment. I wanted to do a bootstrap server/client test.
+<img width="1192" alt="21 bootstrapserverrunning" src="https://user-images.githubusercontent.com/97559266/192027444-7e704433-2f62-4903-84c1-97b9183fd306.png">
 
-###  Continue to the ESP32 lwm2m client build ###
+
+
