@@ -17,11 +17,16 @@ Reference from professor Paul Schragger to setup ESP32 Development Invironment  
 
 
 ### Circuit Diagram
-Here is the circuit diagram. Credit : ESP IDF C_TUTORIAL.pdf page 268
+Here is the circuit diagram. Credit : ESP IDF C_TUTORIAL.pdf page 155
+<img width="428" alt="Screen Shot 2022-09-29 at 4 37 10 PM" src="https://user-images.githubusercontent.com/97559266/193137213-2ebddbe5-22d4-41eb-ba2a-3b6d14d642de.png">
+![circuitdiagramjoystick](https://user-images.githubusercontent.com/97559266/193137314-507a4e13-7209-4f02-888f-d6273c6e3434.png)
+
 
 
 ### Software snippet
 I copied the following code snippet to IDE and compile it. I verified there was no error.
+<img width="696" alt="Screen Shot 2022-09-29 at 4 39 51 PM" src="https://user-images.githubusercontent.com/97559266/193137450-ea3c6a5b-0d7a-48ee-8713-a65f8f1d3912.png">
 
 ### Resulting console
 Here is a screenshot showing final result.
+<img width="1380" alt="joystickworking" src="https://user-images.githubusercontent.com/97559266/193137333-58ca867d-d3b4-451f-b853-de1cd3b5f809.png">
