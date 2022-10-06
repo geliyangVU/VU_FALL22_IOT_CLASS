@@ -226,6 +226,70 @@ https://user-images.githubusercontent.com/97559266/194389402-6f466bee-f9cc-49e7-
 
 
 
+## Configuration for push button 
+1.
+- open the configuration menu
+
+- go to component config
+
+- select anjay-esp32—client
+
+- make sure to select Unknown board
+
+- Select push button
+
+- a new menu will pop up at the bottom of the page
+
+Here is an image showing my setup
+<img width="800" alt="SetPushButtonPin" src="https://user-images.githubusercontent.com/97559266/194389775-bfc88005-5c95-40a8-a8b9-98d3c202c266.png">
+
+2. Build the code for the device using
+    
+    ```
+     cd ~/projects/Anjay-esp32-client
+     idf.py build
+     ```
+
+3. find the port and flash the device
+
+   - find port number by using
+   ```
+   ls -l /dev/ttyUSB*
+   ```
+   it returns something like
+   crw-rw---- 1 root dialout 188, 0 Jul  8 06:17 /dev/ttyUSB0
+   so the port number is 0
+
+   - change the port number in this line to load the code
+    idf.py -p  port_number flash
+    with port nubmer = 0 I used:
+     ```
+     cd ~/projects/Anjay-esp32-client
+     sudo chmod 666 /dev/ttyUSB0
+     idf.py -p 0 flash
+     ```
+     You should see flashing
+     <img width="686" alt="23 loadthecodeontoesp32" src="https://user-images.githubusercontent.com/97559266/194383814-64c91fb1-8761-48f9-a59b-35af9bf9767e.png">
+
+
+4. Go to Leshan server in your browser.
+   You should be able to see the client connected
+   <img width="1440" alt="22 serverregistered" src="https://user-images.githubusercontent.com/97559266/194383787-134ec225-b3fb-4a60-95c4-cfdba943e475.png">
+5. Go to push button home page
+<img width="1436" alt="PushButtonHomeScreen" src="https://user-images.githubusercontent.com/97559266/194390136-5b042df7-4374-4f77-9739-cddce672e91d.png">
+
+ click on R inside Digital Input Counter tab
+ Expand the tabs
+ <img width="1433" alt="PushButtonExpansion" src="https://user-images.githubusercontent.com/97559266/194390350-a0a4ef4b-4d4e-475b-8689-7d2972c29bca.png">
+Pushed the button a few time and verified that counter was updated
+<img width="1433" alt="PushButtonFinalIncrementation" src="https://user-images.githubusercontent.com/97559266/194390172-c082ad40-ed22-44ae-8fd8-b180ffe81aec.png">
+
+
+Here is the circuit diagram
+
+![circuitforpushbutton](https://user-images.githubusercontent.com/97559266/194390543-c809ee0c-691a-434e-90f4-7ccbaf54cfee.jpeg)
+
+
 
 
 
