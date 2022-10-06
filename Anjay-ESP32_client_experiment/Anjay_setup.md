@@ -175,15 +175,7 @@ idf.py set-target esp32
 Here is an image showing my setup
 <img width="795" alt="LightControlMenuTogonextSetting" src="https://user-images.githubusercontent.com/97559266/194382838-dd7e9ea6-2aee-458d-bd1f-2471a5a0a8d3.png">
 
-
-
-
-
-
-
-
-
-
+<img width="793" alt="SetLightControlPin" src="https://user-images.githubusercontent.com/97559266/194383427-0ffc4fc5-d854-4cf7-beb0-d285cff11442.png">
 
 
 4. Build the code for the device using
@@ -213,5 +205,31 @@ Here is an image showing my setup
      idf.py -p 0 flash
      ```
      You should see flashing
+     <img width="686" alt="23 loadthecodeontoesp32" src="https://user-images.githubusercontent.com/97559266/194383814-64c91fb1-8761-48f9-a59b-35af9bf9767e.png">
+
+
+6. Go to Leshan server in your browser.
+   You should be able to see the client connected
+   <img width="1440" alt="22 serverregistered" src="https://user-images.githubusercontent.com/97559266/194383787-134ec225-b3fb-4a60-95c4-cfdba943e475.png">
+7. Go to light control home page
+<img width="1436" alt="LightControlHome" src="https://user-images.githubusercontent.com/97559266/194383951-cf86d9b8-6dd1-4342-9f0e-9399de00fbfd.png">
+ click on W inside On/Off tab
+<img width="1440" alt="LightControlwindow" src="https://user-images.githubusercontent.com/97559266/194384150-06b27a2e-e6b7-425b-996b-fb7e3c13f466.png">
+Toggle the value by entering true/false in the input test or by toggling the box near the input area.
+
+Here is the circuit diagram showing 
+
+![circuitforlight](https://user-images.githubusercontent.com/97559266/194389440-099bcb0a-efa4-4ce1-8acb-e4cb29f9f8b0.jpeg)
+
+
+https://user-images.githubusercontent.com/97559266/194389402-6f466bee-f9cc-49e7-a1f0-410dea40c355.mp4
+
+
+
+
+
+
+
+
 
 
